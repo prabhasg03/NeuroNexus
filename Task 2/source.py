@@ -67,7 +67,6 @@ class AIPlayer:
 
             if alpha >= beta:
                 break
-
         return best_score, best_move
 
 class TicTacToeGUI:
