@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox, simpledialog
 import random
+import source
+import source1
 
 class TicTacToe:
     def __init__(self, root):
@@ -15,14 +17,22 @@ class TicTacToe:
         self.create_board_frame()
         self.get_player_names()
 
+    def func(self):
+        self.exit_game()
+        source.main()
+    def func1(self):
+        self.exit_game()
+        source1.main()
     def create_menu(self):
         menu_bar = tk.Menu(self.root)
         self.root.config(menu=menu_bar)
         ai_menu = tk.Menu(menu_bar, tearoff=0)
+        menu_bar.add_command(label="Main Menu", command=self.func)
         menu_bar.add_cascade(label="AI Level", menu=ai_menu)
         ai_menu.add_command(label="Easy", command=lambda: self.set_ai_level("Easy"))
         ai_menu.add_command(label="Medium", command=lambda: self.set_ai_level("Medium"))
         ai_menu.add_command(label="Hard", command=lambda: self.set_ai_level("Hard"))
+        menu_bar.add_command(label="Player vs Player", command=self.func1)
         menu_bar.add_command(label="Reset", command=self.reset_game)
         menu_bar.add_command(label="Exit", command=self.exit_game)
 
