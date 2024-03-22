@@ -7,4 +7,4 @@ networks or ArcFace</p>
 
 ## Output
 
-https://github.com/prabhasg03/NeuroNexus/assets/121883587/16b27c8c-e168-4bc6-993c-b30911fe4c00
+https://github.com/prabhasg03/NeuroNexus/assets/121883587/4ea87521-f583-4703-b117-ac2ad530cfcf
